@@ -1,0 +1,19 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: guestbook-ui
+  namespace: default
+spec:
+  host: guestbook-ui-default.apps.openshiftc01.nttap.local
+  port:
+    targetPort: 80
+  subdomain: ""
+  to:
+    kind: Service
+    name: guestbook-ui
+    weight: 100
+status:
+  ingress:
+  - conditions:
+      - status: "True"
+        type: Admitted
