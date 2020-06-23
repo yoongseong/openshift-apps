@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: stream-app
-          image: strimzilab/stream-app:latest
+          image: yoongseong/stream-app:latest
           env:
             - name: BOOTSTRAP_SERVERS
               value: "my-cluster-kafka-bootstrap:9092"
