@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: consumer-app
-          image: strimzilab/consumer-app:latest
+          image: yoongseong/consumer-app:latest
           env:
             - name: BOOTSTRAP_SERVERS
               value: "my-cluster-kafka-bootstrap:9092"
